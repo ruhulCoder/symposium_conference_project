@@ -28,6 +28,30 @@ export const Header = () => {
               Home
             </NavLink>
             <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                  isActive
+                    ? 'bg-green-700 text-amber-300'
+                    : 'text-gray-200 hover:bg-green-700 hover:text-white'
+                }`
+              }
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="/abstract"
+              className={({ isActive }) =>
+                `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                  isActive
+                    ? 'bg-green-700 text-amber-300'
+                    : 'text-gray-200 hover:bg-green-700 hover:text-white'
+                }`
+              }
+            >
+              Abstract
+            </NavLink>
+            <NavLink
               to="/speakers"
               className={({ isActive }) =>
                 `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
@@ -84,6 +108,32 @@ export const Header = () => {
               onClick={() => setIsOpen(false)}
             >
               Home
+            </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                `block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+                  isActive
+                    ? 'bg-green-700 text-white'
+                    : 'text-gray-200 hover:bg-green-700 hover:text-white'
+                }`
+              }
+              onClick={() => setIsOpen(false)}
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="/abstract"
+              className={({ isActive }) =>
+                `block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+                  isActive
+                    ? 'bg-green-700 text-white'
+                    : 'text-gray-200 hover:bg-green-700 hover:text-white'
+                }`
+              }
+              onClick={() => setIsOpen(false)}
+            >
+              Abstract
             </NavLink>
             <NavLink
               to="/speakers"
